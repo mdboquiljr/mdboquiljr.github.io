@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Manolo Boquil’s portfolio of teaching materials, Python learning resources, and development projects.">
+  <title>Manolo Boquil — Teaching & Development</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Manolo Boquil home"><span class="monogram">mb<span>.</span></span><span class="brand-name">MANOLO BOQUIL</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav id="navigation" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a class="nav-contact" href="#contact">Let’s connect</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="line"></span> TEACHING × DEVELOPMENT</p>
+        <h1 id="hero-title">Making<br>technology<br><span>make sense.</span></h1>
+        <p class="hero-description">I’m Manolo Boquil. I bring ideas to life through learning materials, practical code, and tools that help people learn.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore my work</a><a class="text-link" href="#about">A little about me</a></div>
+        <div class="hero-note"><span>LEARN.</span><span>BUILD.</span><span>SHARE.</span></div>
+      </div>
+      <div class="hero-feature">
+        <div class="feature-caption"><span>A SMALL LESSON IN PYTHON</span><span>01 / 03</span></div>
+        <div class="code-window">
+          <div class="window-header"><span class="file-name">first_steps.py</span><span class="language-label">PYTHON</span></div>
+          <div class="code-content" aria-label="Python addition example"><div><span class="ln">1</span><span class="comment"># Small steps. Real understanding.</span></div><div><span class="ln">2</span><span>first = <b id="code-first">12</b></span></div><div><span class="ln">3</span><span>second = <b id="code-second">8</b></span></div><div><span class="ln">4</span><span>total = first + second</span></div><div><span class="ln">5</span><span><em>print</em>(total)</span></div></div>
+          <form id="example-form" class="example-form"><div class="example-inputs"><label>First number<input id="first" name="first" type="number" value="12" min="-1000000" max="1000000" step="any" required></label><span class="plus" aria-hidden="true">+</span><label>Second number<input id="second" name="second" type="number" value="8" min="-1000000" max="1000000" step="any" required></label></div><button class="button run-button" type="submit"><span class="play" aria-hidden="true">▶</span> See the result</button></form>
+          <div class="output"><span>EXAMPLE OUTPUT</span><output id="example-output" aria-live="polite">20</output></div>
+          <p class="demo-note">Change the numbers. See how addition works.</p>
+        </div>
+        <div class="feature-footnote"><span class="bracket">{ }</span><p>Good code starts with<br><strong>a clear explanation.</strong></p></div>
+      </div>
+    </section>
+    <div class="discipline-strip" aria-label="Areas of work"><span>Python learning</span><span aria-hidden="true">✦</span><span>Classroom resources</span><span aria-hidden="true">✦</span><span>Student tools</span><span aria-hidden="true">✦</span><span>Creative problem-solving</span></div>
+    <section id="work" class="section-wrap work-section" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Ideas, put into practice<span>.</span></h2></div><p>From the classroom<br>to the command line.</p></div>
+      <div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All work <span>04</span></button><button class="filter" data-filter="teaching" aria-pressed="false">Teaching <span>03</span></button><button class="filter" data-filter="development" aria-pressed="false">Development <span>01</span></button></div>
+      <p class="sr-only" id="filter-status" aria-live="polite"></p>
+      <div class="project-grid">
+        <article class="project" data-category="teaching">
+          <div class="project-visual python-visual" aria-label="Illustrative Python lesson preview"><span class="preview-label">LESSON PREVIEW</span><div class="python-title"><span>HELLO, WORLD.</span><strong>Python,<br>one step at a time.</strong><code>print("Hello, learners!")</code></div><span class="visual-index">01</span></div>
+          <div class="project-body"><div class="project-meta"><span>TEACHING</span><span>PYTHON · PRESENTATION</span></div><h3>Python Teaching Demo</h3><p>A beginner-friendly introduction to programming, with clear examples and classroom discussion.</p><button class="project-link" data-project="python">Explore project <span aria-hidden="true">+</span></button></div>
+        </article>
+        <article class="project" data-category="development">
+          <div class="project-visual bot-visual" aria-label="Illustrative chatbot conversation"><span class="preview-label">CONCEPT PREVIEW</span><div class="chat-preview"><div class="chat-title"><span class="chat-avatar">C</span><div><strong>CIT Chat bot</strong><span>Student assistant</span></div></div><div class="bubble user-bubble">!help</div><div class="bubble bot-bubble">Hi! Let’s find what you need.<div class="chat-commands"><span>Commands</span><span>Resources</span></div></div></div><span class="visual-index">02</span></div>
+          <div class="project-body"><div class="project-meta"><span>DEVELOPMENT</span><span>CHATBOT · MESSENGER</span></div><h3>CIT Chat bot</h3><p>A student assistant project exploring command-based conversations in Facebook Messenger.</p><button class="project-link" data-project="bot">Explore project <span aria-hidden="true">+</span></button></div>
+        </article>
+        <article class="project" data-category="teaching">
+          <div class="project-visual quiz-visual" aria-label="Illustrative Python activity preview"><span class="preview-label">ACTIVITY PREVIEW</span><div class="quiz-preview"><p>THINK IT THROUGH.</p><h4>What will<br>the program print?</h4><code>result = (6 + 4) * 2</code><div class="answer-preview"><span>10</span><span>14</span><span class="correct-preview">20</span></div></div><span class="visual-index">03</span></div>
+          <div class="project-body"><div class="project-meta"><span>TEACHING</span><span>ASSESSMENT · ACTIVITIES</span></div><h3>Python Learning Activities</h3><p>Practice that connects arithmetic, flowcharts, and code to help learners build confidence.</p><button class="project-link" data-project="activities">Explore project <span aria-hidden="true">+</span></button></div>
+        </article>
+        <article class="project" data-category="teaching">
+          <div class="project-visual connect-visual" aria-label="Illustrative classroom presentation preview"><span class="preview-label">PRESENTATION PREVIEW</span><div class="connect-preview"><span>CLASSROOM CONVERSATIONS</span><h4>Connect.<br>Contribute.<br><em>Belong.</em></h4><div class="connect-rule"></div><p>A place for every voice.</p></div><span class="visual-index">04</span></div>
+          <div class="project-body"><div class="project-meta"><span>TEACHING</span><span>PRESENTATION · REFLECTION</span></div><h3>Connect & Contribute</h3><p>Visual classroom materials that invite participation, reflection, and meaningful conversation.</p><button class="project-link" data-project="connect">Explore project <span aria-hidden="true">+</span></button></div>
+        </article>
+      </div>
+    </section>
+    <section id="about" class="about-section" aria-labelledby="about-title"><div class="section-wrap about-inner"><div class="about-intro"><p class="eyebrow">02 / ABOUT ME</p><h2 id="about-title">A teacher’s curiosity.<br>A builder’s mindset.</h2><div class="nameplate"><span class="name-initials">MB</span><div><strong>Manolo Boquil</strong><span>Teaching & development</span></div></div></div><div class="about-copy"><p class="lead">I enjoy turning technical ideas into something people can understand and use.</p><p>My work brings together beginner-friendly programming lessons, classroom presentations, and practical software projects. Whether I’m explaining a line of Python or working through a chatbot problem, I care about making the next step clearer.</p><div class="approach"><div><span>01</span><h3>Start with understanding</h3><p>Make the idea approachable before adding complexity.</p></div><div><span>02</span><h3>Learn by making</h3><p>Connect concepts to examples learners can try.</p></div><div><span>03</span><h3>Keep improving</h3><p>Use questions and feedback to make the work better.</p></div></div></div></div></section>
+    <section id="skills" class="section-wrap skills-section" aria-labelledby="skills-title"><div class="section-heading"><div><p class="eyebrow">03 / MY TOOLKIT</p><h2 id="skills-title">What I work with<span>.</span></h2></div><p>A blend of technical thinking<br>and thoughtful communication.</p></div><div class="skills-grid"><div class="skill-group"><span class="skill-number">01</span><h3>Programming & logic</h3><p>Turning a problem into clear, manageable steps.</p><div class="tags"><span>Python</span><span>Arithmetic & logic</span><span>Flowcharts</span><span>SDLC concepts</span></div></div><div class="skill-group"><span class="skill-number">02</span><h3>Learning & teaching</h3><p>Making room for explanation, practice, and discovery.</p><div class="tags"><span>Teaching demos</span><span>Learning activities</span><span>Quiz design</span><span>Beginner instruction</span></div></div><div class="skill-group"><span class="skill-number">03</span><h3>Digital communication</h3><p>Presenting information in a useful, engaging way.</p><div class="tags"><span>PowerPoint</span><span>Visual presentations</span><span>Chatbot concepts</span><span>Technical explanations</span></div></div></div></section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title"><div class="section-wrap contact-inner"><div><p class="eyebrow">04 / LET’S CONNECT</p><h2 id="contact-title">Have an idea?<br><span>Let’s make it useful.</span></h2><p>Teaching resources, student tools, or something new for the web.</p></div><div class="contact-box" id="contact-links"><span class="contact-label">CONTACT</span><p>Contact details coming soon.</p></div></div></section>
+  </main>
+  <footer class="section-wrap footer"><a class="monogram" href="#home" aria-label="Back to top">mb<span>.</span></a><p>© <span id="year">2026</span> Manolo Boquil</p><a href="#home">Back to top</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span id="dialog-category" class="eyebrow"></span><button id="close-dialog" class="close-dialog" aria-label="Close project details">✕</button></div><h2 id="dialog-title"></h2><p id="dialog-summary" class="dialog-summary"></p><div id="dialog-details"></div><div class="dialog-footer"><span>PROJECT OVERVIEW</span><button id="dialog-done" class="button primary">Back to portfolio</button></div></dialog>
+</body>
+</html>
