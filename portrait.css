@@ -1,0 +1,21 @@
+.about-portrait {
+  width: min(100%, 300px);
+  aspect-ratio: 3 / 4;
+  margin: 0 0 28px;
+  overflow: hidden;
+  border: 1px solid #355487;
+  border-radius: 8px;
+  background: #19294e;
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+@media (max-width: 760px) {
+  .about-portrait { width: min(100%, 280px); }
+}
