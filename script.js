@@ -1,11 +1,12 @@
 // Add your real public contact details here. Leave unknown details blank.
 const portfolioContact = {
   email: '',
-  github: '', // e.g. https://github.com/your-username
+  github: 'https://github.com/mdboquiljr/',
   linkedin: '' // e.g. https://www.linkedin.com/in/your-username/
 };
 
 const projects = {
+  campuslms: {category:'DEVELOPMENT / CLASSROOM TOOLS',title:'CampusLMS',summary:'A Flask learning management system built around day-to-day classroom work.',focus:'Give teachers one place to organize subjects and sections, publish learning work, and track student participation.',items:['Subject sections and student rosters','Quizzes and activities with section-based publishing','QR attendance check-in and reports','Student submissions and teacher scoring','Live quiz monitoring and teacher-controlled recovery'],takeaway:'CampusLMS brings classroom workflows into a single local application. The preview is illustrative; the repository contains the application source, setup guide, and tests.',repository:'https://github.com/mdboquiljr/CampusLMS'},
   python: {category:'TEACHING / PYTHON',title:'Python Teaching Demo',summary:'A classroom introduction to Python that puts understanding before memorization.',focus:'Introduce programming through approachable explanations, short examples, and opportunities for students to participate.',items:['Beginner-focused programming concepts','Code examples to discuss in class','Interactive questions and guided practice','Connections between programming and the software development life cycle'],takeaway:'A good first lesson helps students understand what the code does—and gives them the confidence to try it themselves.'},
   bot: {category:'DEVELOPMENT / STUDENT TOOLS',title:'CIT Chat bot',summary:'A Messenger chatbot project exploring a simple command-based student assistant.',focus:'Make frequently requested information easier to navigate through a conversational interface.',items:['Command-based interactions, including a help command','Messenger webhook and token configuration','Testing message delivery and replies','Iterative troubleshooting of the bot’s behavior'],takeaway:'Small interactions are useful only when they work reliably. This project is a space to learn, test, and improve. The card shows an illustrative conversation, not a live integration.'},
   activities: {category:'TEACHING / ASSESSMENT',title:'Python Learning Activities',summary:'Learning activities that connect a written problem, a flowchart, and a Python solution.',focus:'Help beginners reason through arithmetic and program flow before writing code.',items:['Multiple-choice and identification questions','Arithmetic-based programming activities','Flowcharts to translate into Python','Practice that encourages students to explain their reasoning'],takeaway:'The goal is to connect the process to the program, so learners can explain why their solution works.'},
@@ -76,6 +77,18 @@ document.querySelectorAll('[data-project]').forEach(button => button.addEventLis
   project.items.forEach(item => {const li = document.createElement('li');li.textContent = item;ul.append(li);});
   details.append(h,ul);
   paragraph('The takeaway',project.takeaway);
+  if (project.repository) {
+    const link = document.createElement('a');
+    link.className = 'dialog-repository';
+    link.href = project.repository;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = 'View source on GitHub ↗';
+    const note = document.createElement('p');
+    note.className = 'repository-note';
+    note.textContent = 'Private repository. Access requires permission.';
+    details.append(link,note);
+  }
   dialog.showModal();
 }));
 document.getElementById('close-dialog').addEventListener('click',() => dialog.close());

@@ -8,6 +8,7 @@
   <title>Manolo Boquil — Teaching & Development</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="campuslms.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -41,23 +42,27 @@
     <div class="discipline-strip" aria-label="Areas of work"><span>Python learning</span><span aria-hidden="true">✦</span><span>Classroom resources</span><span aria-hidden="true">✦</span><span>Student tools</span><span aria-hidden="true">✦</span><span>Creative problem-solving</span></div>
     <section id="work" class="section-wrap work-section" aria-labelledby="work-title">
       <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Ideas, put into practice<span>.</span></h2></div><p>From the classroom<br>to the command line.</p></div>
-      <div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All work <span>04</span></button><button class="filter" data-filter="teaching" aria-pressed="false">Teaching <span>03</span></button><button class="filter" data-filter="development" aria-pressed="false">Development <span>01</span></button></div>
+      <div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All work <span>05</span></button><button class="filter" data-filter="teaching" aria-pressed="false">Teaching <span>03</span></button><button class="filter" data-filter="development" aria-pressed="false">Development <span>02</span></button></div>
       <p class="sr-only" id="filter-status" aria-live="polite"></p>
       <div class="project-grid">
+        <article class="project" data-category="development">
+          <div class="project-visual lms-visual" aria-label="Illustrative CampusLMS dashboard preview"><span class="preview-label">INTERFACE CONCEPT</span><div class="lms-preview"><div class="lms-preview-top"><span class="lms-mark">{ do.IT }</span><span class="lms-preview-status">CLASSROOM LMS</span></div><div class="lms-preview-title">One place to<br><strong>teach and track.</strong></div><div class="lms-preview-tiles"><span>Subjects<br><strong>Organize</strong></span><span>Quizzes<br><strong>Monitor</strong></span><span>Attendance<br><strong>Check in</strong></span></div></div><span class="visual-index">01</span></div>
+          <div class="project-body"><div class="project-meta"><span>DEVELOPMENT</span><span>FLASK · PYTHON · SQLITE</span></div><h3>CampusLMS</h3><p>A classroom learning management system for subjects, quizzes, activities, attendance, and student submissions.</p><button class="project-link" data-project="campuslms">Explore project <span aria-hidden="true">+</span></button></div>
+        </article>
         <article class="project" data-category="teaching">
-          <div class="project-visual python-visual" aria-label="Illustrative Python lesson preview"><span class="preview-label">LESSON PREVIEW</span><div class="python-title"><span>HELLO, WORLD.</span><strong>Python,<br>one step at a time.</strong><code>print("Hello, learners!")</code></div><span class="visual-index">01</span></div>
+          <div class="project-visual python-visual" aria-label="Illustrative Python lesson preview"><span class="preview-label">LESSON PREVIEW</span><div class="python-title"><span>HELLO, WORLD.</span><strong>Python,<br>one step at a time.</strong><code>print("Hello, learners!")</code></div><span class="visual-index">02</span></div>
           <div class="project-body"><div class="project-meta"><span>TEACHING</span><span>PYTHON · PRESENTATION</span></div><h3>Python Teaching Demo</h3><p>A beginner-friendly introduction to programming, with clear examples and classroom discussion.</p><button class="project-link" data-project="python">Explore project <span aria-hidden="true">+</span></button></div>
         </article>
         <article class="project" data-category="development">
-          <div class="project-visual bot-visual" aria-label="Illustrative chatbot conversation"><span class="preview-label">CONCEPT PREVIEW</span><div class="chat-preview"><div class="chat-title"><span class="chat-avatar">C</span><div><strong>CIT Chat bot</strong><span>Student assistant</span></div></div><div class="bubble user-bubble">!help</div><div class="bubble bot-bubble">Hi! Let’s find what you need.<div class="chat-commands"><span>Commands</span><span>Resources</span></div></div></div><span class="visual-index">02</span></div>
+          <div class="project-visual bot-visual" aria-label="Illustrative chatbot conversation"><span class="preview-label">CONCEPT PREVIEW</span><div class="chat-preview"><div class="chat-title"><span class="chat-avatar">C</span><div><strong>CIT Chat bot</strong><span>Student assistant</span></div></div><div class="bubble user-bubble">!help</div><div class="bubble bot-bubble">Hi! Let’s find what you need.<div class="chat-commands"><span>Commands</span><span>Resources</span></div></div></div><span class="visual-index">03</span></div>
           <div class="project-body"><div class="project-meta"><span>DEVELOPMENT</span><span>CHATBOT · MESSENGER</span></div><h3>CIT Chat bot</h3><p>A student assistant project exploring command-based conversations in Facebook Messenger.</p><button class="project-link" data-project="bot">Explore project <span aria-hidden="true">+</span></button></div>
         </article>
         <article class="project" data-category="teaching">
-          <div class="project-visual quiz-visual" aria-label="Illustrative Python activity preview"><span class="preview-label">ACTIVITY PREVIEW</span><div class="quiz-preview"><p>THINK IT THROUGH.</p><h4>What will<br>the program print?</h4><code>result = (6 + 4) * 2</code><div class="answer-preview"><span>10</span><span>14</span><span class="correct-preview">20</span></div></div><span class="visual-index">03</span></div>
+          <div class="project-visual quiz-visual" aria-label="Illustrative Python activity preview"><span class="preview-label">ACTIVITY PREVIEW</span><div class="quiz-preview"><p>THINK IT THROUGH.</p><h4>What will<br>the program print?</h4><code>result = (6 + 4) * 2</code><div class="answer-preview"><span>10</span><span>14</span><span class="correct-preview">20</span></div></div><span class="visual-index">04</span></div>
           <div class="project-body"><div class="project-meta"><span>TEACHING</span><span>ASSESSMENT · ACTIVITIES</span></div><h3>Python Learning Activities</h3><p>Practice that connects arithmetic, flowcharts, and code to help learners build confidence.</p><button class="project-link" data-project="activities">Explore project <span aria-hidden="true">+</span></button></div>
         </article>
         <article class="project" data-category="teaching">
-          <div class="project-visual connect-visual" aria-label="Illustrative classroom presentation preview"><span class="preview-label">PRESENTATION PREVIEW</span><div class="connect-preview"><span>CLASSROOM CONVERSATIONS</span><h4>Connect.<br>Contribute.<br><em>Belong.</em></h4><div class="connect-rule"></div><p>A place for every voice.</p></div><span class="visual-index">04</span></div>
+          <div class="project-visual connect-visual" aria-label="Illustrative classroom presentation preview"><span class="preview-label">PRESENTATION PREVIEW</span><div class="connect-preview"><span>CLASSROOM CONVERSATIONS</span><h4>Connect.<br>Contribute.<br><em>Belong.</em></h4><div class="connect-rule"></div><p>A place for every voice.</p></div><span class="visual-index">05</span></div>
           <div class="project-body"><div class="project-meta"><span>TEACHING</span><span>PRESENTATION · REFLECTION</span></div><h3>Connect & Contribute</h3><p>Visual classroom materials that invite participation, reflection, and meaningful conversation.</p><button class="project-link" data-project="connect">Explore project <span aria-hidden="true">+</span></button></div>
         </article>
       </div>
